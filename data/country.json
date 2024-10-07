@@ -1,0 +1,13 @@
+{
+    "countries": [
+      { "code": "PK", "name": "Pakistan", "flag": "/images/pakistan.png" },
+      { "code": "US", "name": "United States", "flag": "/images/us.jpg" },
+      { "code": "IN", "name": "India", "flag": "/images/india.png" }
+    ],
+    "languages": [
+      { "code": "en", "name": "English" },
+      { "code": "ur", "name": "Urdu" },
+      { "code": "hi", "name": "Hindi" }
+    ]
+  }
+  

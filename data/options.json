@@ -1,0 +1,15 @@
+[
+    {
+      "option": "Popular Cuisines Near Me",
+      "content": "<ul class=\"flex\"><li class=\"mr-4\">. Arabian near me</li><li class=\"mr-4\">. Beverage Shops near me</li><li class=\"mr-4\">. Cafés near me</li><li class=\"mr-4\">. Casual Dining near me</li><li class=\"mr-4\">. Quick Bites near me</li><li class=\"mr-4\">. Sweet Shops near me</li></ul>"
+    },
+    {
+      "option": "Popular Restaurant Types Near me",
+      "content": "<ul class=\"flex\"><li class=\"mr-4\">. Bakeries near me</li><li class=\"mr-4\">. Beverage Shops near me</li><li class=\"mr-4\">. Cafés near me</li><li class=\"mr-4\">. Casual Dining near me</li><li class=\"mr-4\">. Quick Bites near me</li><li class=\"mr-4\">. Sweet Shops near me</li></ul>"
+    },
+    {
+      "option": "Cities We Deliver To",
+      "content": "Pakistan,India,Bangladesh,USA"
+    }
+  ]
+  

@@ -54,6 +54,36 @@ body {
 }
 
 
+/* custom-css */
+
+.custom-radio {
+  appearance: none; /* Remove default styling */
+  width: 20px;
+  height: 20px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio:checked {
+  border-color: red;
+}
+
+.custom-radio:checked::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 @layer utilities {
     .text-balance {
       text-wrap: balance;

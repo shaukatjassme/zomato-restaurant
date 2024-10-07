@@ -14,7 +14,7 @@ const config: Config = {
         'custom-okra-color': '#363636',
         'custom-button-color': '#ed1c24',
         'font-family-custom': 'Poppins, sans-serif',
-        'footer-text-color': '#767676',
+        'mobile-text-color': '#fffbf7',
         'footer-background-color': '#0f0f0f',
         'location-text-color': '#ED1C24',
         'get-green-btn':'#28a745'
