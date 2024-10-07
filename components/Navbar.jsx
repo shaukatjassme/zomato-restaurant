@@ -22,10 +22,10 @@ const Navbar = () => {
           </a>
 
           <nav className="md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 text-white text-xl hover:text-gray-300">Investor Relations</a>
-            <a className="mr-5 text-white text-xl hover:text-gray-300">Add Restaurant</a>
-            <a className="mr-5 text-white text-xl hover:text-gray-300">Log In</a>
-            <a className="mr-5 text-white text-xl hover:text-gray-300">Sign Up</a>
+            <a className="mr-5 text-white text-xl hover:text-gray-300 cursor-pointer">Investor Relations</a>
+            <a className="mr-5 text-white text-xl hover:text-gray-300 cursor-pointer">Add Restaurant</a>
+            <a className="mr-5 text-white text-xl hover:text-gray-300 cursor-pointer">Log In</a>
+            <a className="mr-5 text-white text-xl hover:text-gray-300 cursor-pointer">Sign Up</a>
           </nav>
 
           {/* Mobile Toggle Button */}
