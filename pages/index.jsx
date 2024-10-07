@@ -1,7 +1,7 @@
-import { React, useState,  } from 'react'
+import React, { useState } from 'react';
 import optionsData from '../data/options.json';
 
-const index = () => {
+const Index = () => {
   // State to track the selected method and input value
   const [contactMethod, setContactMethod] = useState('email');
   const [inputValue, setInputValue] = useState('');
@@ -218,4 +218,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
