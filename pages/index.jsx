@@ -6,7 +6,7 @@ const Index = () => {
   const [contactMethod, setContactMethod] = useState('email');
   const [inputValue, setInputValue] = useState('');
   const [activeIndex, setActiveIndex] = useState(null);
- 
+
 
   // Handle radio button change
   const handleContactMethodChange = (method) => {
@@ -14,12 +14,7 @@ const Index = () => {
     setInputValue(''); // Clear the input when method changes
   };
 
-
-
-
-
-
-
+  // Handle input change
 
   const toggleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -33,7 +28,7 @@ const Index = () => {
       <div className="container mx-auto w-85 mt-10 ">
         <div className="grid grid-cols-12 gap-4">
           {/* Blurb covering 6 columns */}
-          <div className="col-span-12 md:col-span-6 bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transform transition duration-400 hover:scale-105">
+          <div className="tablet-full col-span-12 lg:col-span-6 bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer transform transition duration-400 hover:scale-105">
             {/* Full-width Image */}
             <img
               src="/images/blurb.jpg"
@@ -58,13 +53,13 @@ const Index = () => {
         </div>
 
         <div className="grid grid-cols-12 gap-4 mt-10">
-          <div className="col-span-12 md:col-span-8 bg-white  ">
+          <div className="col-span-12 lg:col-span-8 bg-white  ">
             <p className="custom-okra-color  text-3xl">Popular localities in and around <span className='font-bold'>Baramulla</span></p>
           </div>
         </div>
 
         <div className="grid grid-cols-12 gap-4 mt-5 mb-5">
-          <div className="col-span-12 md:col-span-4 bg-white  ">
+          <div className="col-span-12 tablet-full  lg:col-span-4 bg-white  ">
             {/* Button with title, subtitle, and arrow */}
             <button className="mt-4 w-full flex justify-between items-center bg-white border border-gray-300 rounded-lg p-4 shadow hover:shadow-lg transition-shadow duration-300">
               {/* Title and Subtitle on the left */}
@@ -94,10 +89,10 @@ const Index = () => {
 
       <section className="text-gray-600 body-font bg-mobile-text-color">
         <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 pl-20">
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 pl-0 md:pl-0 lg:pl-20 ">
             <img className="object-cover object-center rounded" alt="hero" src="/images/mobile.png" />
           </div>
-          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-0 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Get the Zomato app</h1>
             <p className="mb-8 leading-relaxed">We will send you a link, open it on your phone to download the app</p>
             <div className="flex w-full md:justify-start justify-center items-end">
@@ -153,7 +148,7 @@ const Index = () => {
                 />
               </div>
 
-              <button className="inline-flex bg-red-500 text-white px-6 py-2 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Share App Link</button>
+              <button className="inline-flex bg-red-500 text-white px-6 py-2 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg custom-size-mobile">Share App Link</button>
             </div>
             <p className="text-black-600 text-sm mt-5 ">Download app from</p>
             <div className="flex lg:flex-row md:flex-col">
@@ -164,7 +159,7 @@ const Index = () => {
                   className="w-32" // Adjust size as needed
                 />
               </button>
-              <button className="inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 focus:outline-none">
+              <button className="inline-flex py-3 px-5 lg:px-0 md:px-0  rounded-lg items-center  md:ml-0 ml-4 lg:ml-4 mt-0 lg:mt-0 focus:outline-none">
                 <img
                   src="/images/apple-black.png"
                   alt="App Store Badge"
@@ -188,7 +183,7 @@ const Index = () => {
                   onClick={() => toggleAccordion(index)}
                   className="flex justify-between items-center rounded w-full p-4 border-2 border-gray-100"
                 >
-                  <span className="text-xl">{option.option}</span> {/* Added text-2xl class here */}
+                  <span className="text-xl custom-size-mobile">{option.option}</span> {/* Added text-2xl class here */}
                   <svg
                     className={`w-6 h-6 text-gray-600 transition-transform ${activeIndex === index ? 'transform rotate-180' : ''
                       }`}
@@ -205,7 +200,7 @@ const Index = () => {
 
                 {activeIndex === index && (
                   <div className="p-4 bg-white-50 text-gray-700">
-                    <div className='flex' dangerouslySetInnerHTML={{ __html: option.content }} />
+                    <div className='flex list-f-mobile' dangerouslySetInnerHTML={{ __html: option.content }} />
                   </div>
                 )}
               </div>

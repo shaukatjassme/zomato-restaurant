@@ -84,6 +84,22 @@ body {
 
 
 
+@media screen and (max-width: 576px) {
+  ul.flex{
+    display: block;
+  }
+  }
+@media screen and (max-width: 768px) {
+  .custom-size-mobile {
+    font-size: 11px;
+  }
+  .tablet-full {
+    @apply col-span-12; /* Change to half-width for tablet and up */
+  }
+}
+
+
+
 @layer utilities {
     .text-balance {
       text-wrap: balance;

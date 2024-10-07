@@ -39,6 +39,9 @@ const config: Config = {
         100: '100px',
         150: '150px',
       },
+      fontSize: {
+        'custom-size-mobile': '14px',
+      }
     },
   },
   plugins: [],
