@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="image-container flex justify-center items-center mb-5">
             <img src="/images/zomato-logo.png" className="w-2/5 lg:w-1/5 pt-12 pb-4" alt="Zomato Logo" />
           </div>
-          <h1 className="text-white text-center text-2xl">Discover the best food & drinks in Baramulla</h1>
+          <h1 className="text-white text-center lg:text-2xl text-xs">Discover the best food & drinks in Baramulla</h1>
           <LocationDropdown />
         </div>
       </header>
