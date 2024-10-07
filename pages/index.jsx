@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import { React, useState,  } from 'react'
 import optionsData from '../data/options.json';
 
 const index = () => {
@@ -6,7 +6,7 @@ const index = () => {
   const [contactMethod, setContactMethod] = useState('email');
   const [inputValue, setInputValue] = useState('');
   const [activeIndex, setActiveIndex] = useState(null);
-  const [data, setData] = useState({ countries: [], languages: [] });
+ 
 
   // Handle radio button change
   const handleContactMethodChange = (method) => {
