@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <header className="bg-cover bg-center bg-no-repeat lg:h-[70vh] md:h-[50vh] sm:h-[40vh]" style={{ backgroundImage: "url('/images/header-bg.jpg')" }}>
         <div className="container mx-auto flex flex-wrap p-8 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0 hidden md:flex">
+          <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0 hidden md:flex cursor-pointer">
             <FaMobileAlt className="text-2xl mr-1" /> Get the App
           </a>
 
